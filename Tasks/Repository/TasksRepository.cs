@@ -15,9 +15,24 @@ namespace TasksAPI.Repository
             _context = context;
         }
 
-        public ICollection<Task> GetTasks() 
+        public Task GetTask(int id)
+        {
+            return _context.Tasks.Where(t => t.Id == id).FirstOrDefault();
+        }
+
+        public Task GetTask(string title)
+        {
+            return _context.Tasks.Where(t => t.Title == title).FirstOrDefault();
+        }
+        
+        public ICollection<Task> GetTasks()  
         {
             return _context.Tasks.OrderBy(t => t.Id).ToList();
+        }
+
+        public bool TaskExists(int id)
+        {
+            return _context.Tasks.Any(p => p.Id == id);
         }
     }
 }
