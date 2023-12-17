@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksAPI", "Tasks\TasksAPI.csproj", "{3A45F091-498B-4EEB-B306-DC2B82DC81AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksAPI", "TasksAPI\TasksAPI.csproj", "{3A45F091-498B-4EEB-B306-DC2B82DC81AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
