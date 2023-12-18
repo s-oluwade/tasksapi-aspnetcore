@@ -9,6 +9,6 @@ namespace TasksAPI.Interfaces
         Objective GetObjective(string title);
         bool ObjectiveExists(int id);
         bool CreateObjective();
-        bool save();
+        bool Save();
     }
 }

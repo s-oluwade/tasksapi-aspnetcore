@@ -16,6 +16,19 @@ namespace TasksAPI.Repository
             _context = context;
         }
 
+        public bool CreateObjective(Objective objective)
+        {
+            _context.Add(objective);
+            _context.SaveChanges();
+            var saved = _context.SaveChanges();
+            return saved > 0 ? true : false;
+        }
+
+        public bool CreateObjective()
+        {
+            throw new NotImplementedException();
+        }
+
         public Objective GetObjective(int id)
         {
             return _context.Objectives.Where(t => t.Id == id).Include(o => o.User).FirstOrDefault();
@@ -36,7 +49,7 @@ namespace TasksAPI.Repository
             return _context.Objectives.Any(p => p.Id == id);
         }
 
-        public bool save()
+        public bool Save()
         {
             throw new NotImplementedException();
         }

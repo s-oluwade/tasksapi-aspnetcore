@@ -34,7 +34,7 @@ namespace TasksAPI.Repository
             return _context.Users.Any(p => p.Id == id);
         }
 
-        public bool save()
+        public bool Save()
         {
             throw new NotImplementedException();
         }
