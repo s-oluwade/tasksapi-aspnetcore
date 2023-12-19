@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BlwJBwmpzNgNS0NndzKmugYjLDXHYLjacQBo3VRRIbVU7JNj5/c+by3nRNcBn02+3/rgr/1Jxyu8tlHuzgufLw==",
+  "dgSpecHash": "o0yUvj3xAkuYr8sjuEmjsgFR9/LRtBvVYZDWp7VJvwkSbPo5cA41FNz73zXKF4UaRxV1dO0rWkGy+2bMtXPXfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\steff\\Dev\\api-workspace\\ASP.NET api\\TasksAPI\\TasksAPI\\TasksAPI.csproj",
+  "projectFilePath": "C:\\Users\\steff\\Dev\\tasksapi-aspnetcore\\TasksAPI\\TasksAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\steff\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\steff\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

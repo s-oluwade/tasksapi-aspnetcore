@@ -19,14 +19,7 @@ namespace TasksAPI.Repository
         public bool CreateObjective(Objective objective)
         {
             _context.Add(objective);
-            _context.SaveChanges();
-            var saved = _context.SaveChanges();
-            return saved > 0 ? true : false;
-        }
-
-        public bool CreateObjective()
-        {
-            throw new NotImplementedException();
+            return _context.SaveChanges() > 0 ? true : false;
         }
 
         public Objective GetObjective(int id)
@@ -39,7 +32,7 @@ namespace TasksAPI.Repository
             return _context.Objectives.Where(t => t.Title == title).Include(o => o.User).FirstOrDefault();
         }
 
-        public ICollection<Objective> GetObjectives()  
+        public ICollection<Objective> GetObjectives()
         {
             return _context.Objectives.OrderBy(t => t.Id).Include(o => o.User).ToList();
         }
@@ -47,11 +40,6 @@ namespace TasksAPI.Repository
         public bool ObjectiveExists(int id)
         {
             return _context.Objectives.Any(p => p.Id == id);
-        }
-
-        public bool Save()
-        {
-            throw new NotImplementedException();
         }
     }
 }

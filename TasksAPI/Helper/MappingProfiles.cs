@@ -10,6 +10,7 @@ namespace TasksAPI.Helper
         {
             CreateMap<User, UsersDto>();
             CreateMap<Objective, ObjectivesDto>();
+            CreateMap<ObjectivesDto, Objective>();
         }
     }
 }

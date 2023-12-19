@@ -34,9 +34,10 @@ namespace TasksAPI.Repository
             return _context.Users.Any(p => p.Id == id);
         }
 
-        public bool Save()
+        public bool CreateUser(User user)
         {
-            throw new NotImplementedException();
+            _context.Add(user);
+            return _context.SaveChanges() > 0 ? true : false;
         }
     }
 }

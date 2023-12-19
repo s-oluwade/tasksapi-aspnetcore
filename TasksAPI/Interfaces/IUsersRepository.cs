@@ -8,7 +8,6 @@ namespace TasksAPI.Interfaces
         User GetUser(int id);
         public ICollection<Objective> GetUserObjectives(int id);
         bool UserExists(int id);
-        bool CreateRepository();
-        bool Save();
+        bool CreateUser(User user);
     }
 }

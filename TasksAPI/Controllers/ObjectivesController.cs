@@ -48,5 +48,36 @@ namespace TasksAPI.Controllers
 
             return Ok(objective);
         }
+
+        [HttpPost]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        public IActionResult CreateObjective([FromBody] ObjectivesDto objectiveCreate)
+        {
+            if (objectiveCreate == null)
+                return BadRequest(ModelState);
+
+            var objective = _objectivesRepository.GetObjectives().Where(c => c.Title.Trim().ToUpper() == objectiveCreate.Title.TrimEnd().ToUpper())
+                .FirstOrDefault();
+
+            if (objective != null)
+            {
+                ModelState.AddModelError("", "Category already exists");
+                return StatusCode(422, ModelState);
+            }
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var objectiveMap = _mapper.Map<Objective>(objectiveCreate);
+
+            if (!_objectivesRepository.CreateObjective(objectiveMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while saving");
+                return StatusCode(500, ModelState);
+            }
+
+            return Ok("Successfully created");
+        }
     }
 }
