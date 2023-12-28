@@ -37,7 +37,30 @@ namespace TasksAPI.Repository
         public bool CreateUser(User user)
         {
             _context.Add(user);
+            return Save();
+        }
+
+        public bool Save()
+        {
             return _context.SaveChanges() > 0 ? true : false;
+        }
+
+        public bool UpdateUser(User user)
+        {
+            _context.Update(user);
+            return Save();
+        }
+
+        public bool DeleteUser(User user)
+        {
+            _context.Remove(user);
+            return Save();
+        }
+
+        public bool DeleteUsers(List<User> users)
+        {
+            _context.RemoveRange(users);
+            return Save();
         }
     }
 }

@@ -9,6 +9,7 @@ namespace TasksAPI.Helper
         public MappingProfiles()
         {
             CreateMap<User, UsersDto>();
+            CreateMap<UsersDto, User>();
             CreateMap<Objective, ObjectivesDto>();
             CreateMap<ObjectivesDto, Objective>();
         }

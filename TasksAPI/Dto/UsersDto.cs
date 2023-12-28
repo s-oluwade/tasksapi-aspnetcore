@@ -8,6 +8,6 @@ namespace TasksAPI.Dto
         public string? Name { get; set; }
         public string? Email { get; set; }
         public int Age { get; set; }
-        public ICollection<Objective> Objectives { get; set; }
+        public ICollection<Objective>? Objectives { get; set; }
     }
 }

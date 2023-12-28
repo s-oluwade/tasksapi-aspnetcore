@@ -1,1 +1,3 @@
 *.appsettings.json
+TasksAPI/appsettings.json
+TasksAPI/bin/Debug/net6.0/appsettings.json

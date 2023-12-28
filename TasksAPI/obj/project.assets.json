@@ -3468,19 +3468,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steff\\.nuget\\packages\\": {}
+    "C:\\Users\\steff\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\steff\\Dev\\tasksapi-aspnetcore\\TasksAPI\\TasksAPI.csproj",
+      "projectUniqueName": "C:\\Users\\steff\\Dev\\api-workspace\\ASP.NET api\\TasksAPI\\TasksAPI\\TasksAPI.csproj",
       "projectName": "TasksAPI",
-      "projectPath": "C:\\Users\\steff\\Dev\\tasksapi-aspnetcore\\TasksAPI\\TasksAPI.csproj",
+      "projectPath": "C:\\Users\\steff\\Dev\\api-workspace\\ASP.NET api\\TasksAPI\\TasksAPI\\TasksAPI.csproj",
       "packagesPath": "C:\\Users\\steff\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\steff\\Dev\\tasksapi-aspnetcore\\TasksAPI\\obj\\",
+      "outputPath": "C:\\Users\\steff\\Dev\\api-workspace\\ASP.NET api\\TasksAPI\\TasksAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\steff\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
